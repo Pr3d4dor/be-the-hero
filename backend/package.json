@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha",
-    "start": "NODE_ENV=development nodemon src/index.js",
-    "production": "NODE_ENV=production node src/index.js",
+    "test": "NODE_ENV=test mocha --timeout 10000",
+    "start": "NODE_ENV=development PORT=3333 nodemon src/index.js",
+    "production": "NODE_ENV=production PORT=3333 node src/index.js",
     "format": "prettier --write 'src/**/*.js' 'test/**/*.js'"
   },
   "keywords": [],
