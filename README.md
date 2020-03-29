@@ -33,7 +33,9 @@ O Be The Hero é um projeto que facilita a vida dos heróis em salvar o dia, tor
 ```sh
 git clone https://github.com/Pr3d4dor/be-the-hero.git
 cd be-the-hero
-npm install
+npm install --prefix ./backend
+npm install --prefix ./frontend
+npm install --prefix ./mobile
 ```
 #### Iniciando Backend
 ```sh
@@ -45,7 +47,7 @@ npm start
 cd frontend
 npm start
 ```
-#### Iniciando mobile
+#### Iniciando Mobile
 ```sh
 cd mobile
 npm start
