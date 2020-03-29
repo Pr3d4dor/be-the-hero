@@ -61,6 +61,15 @@ describe('API Routes', function () {
                     done();
                 });
         });
+        it('should thrown validation error with an invalid request', function (done) {
+            chai.request(server)
+                .get('/profile')
+                .end(function (err, res) {
+                    res.should.have.status(400);
+                    res.should.be.json;
+                    done();
+                });
+        });
     });
 
     describe('GET /ongs', function () {
@@ -105,6 +114,15 @@ describe('API Routes', function () {
                     done();
                 });
         });
+        it('should thrown validation error with an invalid request', function (done) {
+            chai.request(server)
+                .post('/ongs')
+                .end(function (err, res) {
+                    res.should.have.status(400);
+                    res.should.be.json;
+                    done();
+                });
+        });
     });
 
     describe('GET /incidents', function () {
@@ -133,6 +151,15 @@ describe('API Routes', function () {
                     done();
                 });
         });
+        it('should thrown validation error with an invalid request', function (done) {
+            chai.request(server)
+                .get('/incidents?page=asf')
+                .end(function (err, res) {
+                    res.should.have.status(400);
+                    res.should.be.json;
+                    done();
+                });
+        });
     });
 
     describe('POST /incidents', function () {
@@ -149,6 +176,15 @@ describe('API Routes', function () {
                     res.should.have.status(200);
                     res.should.be.json;
                     res.body.should.have.property('id');
+                    done();
+                });
+        });
+        it('should thrown validation error with an invalid request', function (done) {
+            chai.request(server)
+                .post('/incidents')
+                .end(function (err, res) {
+                    res.should.have.status(400);
+                    res.should.be.json;
                     done();
                 });
         });
@@ -170,6 +206,15 @@ describe('API Routes', function () {
                 .set('Authorization', 'bcccccc')
                 .end(function (err, res) {
                     res.should.have.status(401);
+                    done();
+                });
+        });
+        it('should thrown validation error with an invalid request', function (done) {
+            chai.request(server)
+                .delete('/incidents/asdf')
+                .end(function (err, res) {
+                    res.should.have.status(400);
+                    res.should.be.json;
                     done();
                 });
         });
