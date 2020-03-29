@@ -39,7 +39,7 @@ export default function Logon() {
             required
             placeholder="Sua ID"
             value={id}
-            onChange={e => setId(e.target.value)}
+            onChange={(e) => setId(e.target.value)}
           />
           <button className="button" type="submit">
             Entrar
@@ -51,7 +51,7 @@ export default function Logon() {
           </Link>
         </form>
       </section>
-      <img  className="heroes" src={heroesImg} alt="Heroes" />
+      <img className="heroes" src={heroesImg} alt="Heroes" />
     </div>
   );
 }

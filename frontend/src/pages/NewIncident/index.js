@@ -21,14 +21,14 @@ export default function NewIncident() {
     const data = {
       title,
       description,
-      value
+      value,
     };
 
     try {
       await api.post("incidents", data, {
         headers: {
-          Authorization: ongId
-        }
+          Authorization: ongId,
+        },
       });
 
       history.push("/profile");
@@ -56,17 +56,17 @@ export default function NewIncident() {
           <input
             placeholder="Título do caso"
             value={title}
-            onChange={e => setTitle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
             placeholder="Descrição"
             value={description}
-            onChange={e => setDescription(e.target.value)}
+            onChange={(e) => setDescription(e.target.value)}
           />
           <input
             placeholder="Valor em reais"
             value={value}
-            onChange={e => setValue(e.target.value)}
+            onChange={(e) => setValue(e.target.value)}
           />
 
           <button className="button" type="submit">
