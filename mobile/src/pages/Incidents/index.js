@@ -32,7 +32,7 @@ export default function Incidents() {
     setLoading(true);
 
     const response = await api.get("incidents", {
-      params: { page }
+      params: { page },
     });
 
     setIncidents([...incidents, ...response.data]);
@@ -62,7 +62,7 @@ export default function Incidents() {
       <FlatList
         style={styles.incidentList}
         data={incidents}
-        keyExtractor={incident => String(incident.id)}
+        keyExtractor={(incident) => String(incident.id)}
         showsVerticalScrollIndicator={false}
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
@@ -78,7 +78,7 @@ export default function Incidents() {
             <Text style={styles.incidentValue}>
               {Intl.NumberFormat("pt-BR", {
                 style: "currency",
-                currency: "BRL"
+                currency: "BRL",
               }).format(incident.value)}
             </Text>
 

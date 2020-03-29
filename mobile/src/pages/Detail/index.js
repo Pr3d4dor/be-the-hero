@@ -18,7 +18,7 @@ export default function Detail() {
     incident.title
   }" com o valor de ${Intl.NumberFormat("pt-BR", {
     style: "currency",
-    currency: "BRL"
+    currency: "BRL",
   }).format(incident.value)}`;
 
   function navigateBack() {
@@ -29,7 +29,7 @@ export default function Detail() {
     MailComposer.composeAsync({
       subject: `Herói do caso: ${incident.title}`,
       recipients: [incident.email],
-      body: message
+      body: message,
     });
   }
 
@@ -60,7 +60,7 @@ export default function Detail() {
         <Text style={styles.incidentValue}>
           {Intl.NumberFormat("pt-BR", {
             style: "currency",
-            currency: "BRL"
+            currency: "BRL",
           }).format(incident.value)}
         </Text>
       </View>
