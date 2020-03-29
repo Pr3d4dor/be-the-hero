@@ -5,14 +5,10 @@
 <p align="center">
     <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#executandor">Executando</a>&nbsp;&nbsp;&nbsp;
+    <a href="#executando">Executando</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
-
-<p align="center">
-    <img alt="Frontend" src="git/prev.png" width="100%">
-</p>
 
 ## Tecnologias
 
