@@ -1,5 +1,5 @@
 <h4 align="center">
-    Semana OmniStack 11.0
+    Be The Hero - Semana OmniStack 11.0
 </h4>
 
 <p align="center">
@@ -31,8 +31,8 @@ O Be The Hero é um projeto que facilita a vida dos heróis em salvar o dia, tor
 
 #### Clone o projeto
 ```sh
-git clone https://github.com/Pr3d4dor/semana-omnistack-11.git
-cd semana-omnistack-11
+git clone https://github.com/Pr3d4dor/be-the-hero.git
+cd be-the-hero
 npm install
 ```
 #### Iniciando Backend
