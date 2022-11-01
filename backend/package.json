@@ -22,7 +22,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.4.5",
+    "mocha": "^10.1.0",
     "nodemon": "^2.0.2",
     "prettier": "2.0.2"
   }
